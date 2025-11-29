@@ -65,22 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // aos.js
 AOS.init({
-    easing: "ease-out-quad",
-    duration: 800,
-    delay: 8000,
-    once: true,
+  easing: "ease-out-sine",
+  duration: 800,
+  delay: 150,
+  offset: 120,
+  once: true,
 });
-
-
-const feadIn = document.querySelector('.fead-in');
-
-const keyframes = {
-  opacity: [0, 1],
-  translate: ['0 50px', 0],
-};
-const options = {
-  duration: 3000,
-  easing: 'ease',
-};
-
-feadIn.animate(keyframes, options);
