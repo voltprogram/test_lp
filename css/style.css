@@ -199,7 +199,7 @@ li {
   background-color: var(--color-white);
 }
 .purchase__cta-btn::before {
-  top: calc(50% - 5px);
+  top: calc(50% - 6px);
   transform: rotate(45deg);
 }
 .purchase__cta-btn::after {
