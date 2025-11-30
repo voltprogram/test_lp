@@ -17,6 +17,27 @@ if (fixedSlider) {
   }).mount();
 }
 
+// スクロールインジケーターの制御
+const circle = document.querySelector('.fv__indicator-circle');
+const line = document.querySelector('.fv__indicator-line');
+
+function updateIndicator() {
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.documentElement.scrollHeight;
+  const scrollableHeight = documentHeight - windowHeight;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollProgress = scrollTop / scrollableHeight;
+  const lineHeight = line.offsetHeight;
+  const circleHeight = circle.offsetHeight;
+  const maxPosition = lineHeight - circleHeight;
+  const circlePosition = scrollProgress * maxPosition;
+  circle.style.top = `${circlePosition}px`;
+}
+
+window.addEventListener('scroll', updateIndicator);
+window.addEventListener('resize', updateIndicator);
+updateIndicator();
+
 // 製品使用・スライダー(splide)
 const productSlider = document.querySelector('#product__splide');
 if (productSlider) {
