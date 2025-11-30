@@ -91,4 +91,10 @@ AOS.init({
   delay: 150,
   offset: 120,
   once: true,
+  throttleDelay: 50,
+  debounceDelay: 50,
+});
+
+window.addEventListener("load", function () {
+  AOS.refresh();
 });
