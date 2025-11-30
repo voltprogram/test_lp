@@ -28,14 +28,31 @@
 
 <body>
   <main>
+    <!-- fv-container -->
     <div class="fv__container">
       <div class="fv__bg">
-        <div class="fv__pc-left-content">
-          <div class="fv__pc-logo">
-            <img src="./img/logo-img.png" alt="Denba_Mistのロゴ" loading="eager">
+        <div class="fv__pc-content">
+          <div class="fv__pc-left-item">
+            <div class="fv__pc-logo">
+              <img src="./img/logo-img.png" alt="Denba_Mistのロゴ" loading="eager">
+            </div>
+            <p class="fv__pc-txt serif">新しい健康習慣を始める</p>
+            <a href="https://denba.co.jp/denbahealth/contact/" class="fv__pc-btn" target="_blank">お問い合わせ</a>
           </div>
-          <p class="fv__pc-txt serif">新しい健康習慣を始める</p>
-          <a href="/" class="fv__pc-btn">お問い合わせ</a>
+          <div class="fv__pc-right-item">
+            <a href="#fv" class="fv__page-top-btn">
+              Page<br>
+              top
+            </a>
+            <div class="fv__scroll-indicator">
+              <div class="fv__indicator-line">
+                <div class="fv__indicator-circle"></div>
+              </div>
+            </div>
+            <a href="https://denba.co.jp/denbahealth/denba-mist/" class="fv__official-btn" target="_blank">
+              DENBA JAPAN
+            </a>
+          </div>
         </div>
       </div>
       <div class="fv__logo-fixed">
@@ -103,6 +120,8 @@
         <!-- /fv -->
       </div>
     </div>
+    <!-- /fv-container -->
+    <!-- gradation-container -->
     <div class="gradation__container">
       <div class="lp__content-bottom">
         <!-- campaign -->
@@ -207,7 +226,7 @@
               <div class="flavor__content-img">
                 <img src="./img/latte-img.png" alt="カフェラテのフレーバー" width="610" height="651" loading="lazy">
               </div>
-              <p class="flavor__time latte">朝7:00</p>
+              <p class="flavor__time-latte">朝 7:00</p>
               <p class="flavor__left-content-txt">
                 一日を前向きに。 <br>
                 活力ある毎日をサポート。
@@ -222,7 +241,7 @@
               <div class="flavor__content-img">
                 <img src="./img/mint-img.png" alt="ミントのフレーバー" width="610" height="651" loading="lazy">
               </div>
-              <p class="flavor__time mint">昼12:00</p>
+              <p class="flavor__time-mint">昼 12:00</p>
               <p class="flavor__right-content-txt">
                 大切な午後に。 <br>
                 集中したい時のサポートに。
@@ -237,7 +256,7 @@
               <div class="flavor__content-img">
                 <img src="./img/green_tea-img.png" alt="緑茶のフレーバー" width="610" height="651" loading="lazy">
               </div>
-              <p class="flavor__time green-tea">夕15:00</p>
+              <p class="flavor__time-green-tea">夕 15:00</p>
               <p class="flavor__left-content-txt">
                 気分を切り替えたい時に。<br>
                 すっきりとしたひとときを。
@@ -252,7 +271,7 @@
               <div class="flavor__content-img">
                 <img src="./img/pineapple-img.png" alt="パイナップルのフレーバー" width="610" height="651" loading="lazy">
               </div>
-              <p class="flavor__time pineapple">夜21:00</p>
+              <p class="flavor__time-pineapple">夜 21:00</p>
               <p class="flavor__right-content-txt">
                 一日の終わりに。<br>
                 穏やかな夜のひとときをサポート。
@@ -873,7 +892,25 @@
         </footer>
         <!-- /footer -->
       </div>
+      <div class="pc-fade__device-content">
+        <div class="pc-fade__device-navy" data-aos="fade-left">
+          <img src="./img/navy-img.png" alt="本体の紺色" width="303" height="703" loading="lazy">
+        </div>
+        <div class="pc-fade__device-pink" data-aos="fade-right">
+          <img src="./img/pink-img.png" alt="本体の桃色" width="328" height="686" loading="lazy">
+        </div>
+        <div class="pc-fade__device-gold" data-aos="fade-left">
+          <img src="./img/gold-img.png" alt="本体の金色" width="299" height="713" loading="lazy">
+        </div>
+        <div class="pc-fade__device-white" data-aos="fade-right">
+          <img src="./img/white-img.png" alt="本体の白色" width="296" height="687" loading="lazy">
+        </div>
+        <div class="pc-fade__device-black" data-aos="fade-left">
+          <img src="./img/black-img.png" alt="本体の黒色" width="289" height="725" loading="lazy">
+        </div>
+      </div>
     </div>
+    <!-- /gradation-container -->
   </main>
   <!-- JavaScript -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
