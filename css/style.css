@@ -400,7 +400,7 @@ li {
   line-height: 1.6;
 }
 .fv__logo {
-  width: calc(173 / var(--design-w-base) * 100%);
+  width: calc(173 / var(--design-w-base) * 100vw);
 }
 .fv__txtbox {
   padding-left: calc(42 / var(--design-w-base) * 100vw);
@@ -456,6 +456,7 @@ li {
   font-weight: 500;
   box-shadow: 0 4px 8px 4px #CADAE2;
   z-index: 5;
+  transition: .3s;
 }
 .fv__title {
   position: absolute;
@@ -482,6 +483,10 @@ li {
   }
   .fv__txt-first {
     font-size: calc(36 / var(--design-w-pc) * 100vw);
+  }
+  .fv__logo {
+    width: calc(173 / var(--design-w-pc) * 100vw);
+    transition: .3s;
   }
   .fv__logo img {
     vertical-align: top;
@@ -513,9 +518,15 @@ li {
     width: calc(249 / var(--design-w-pc) * 100vw);
     height: calc(249 / var(--design-w-pc) * 100vw);
   }
-
   .fv__title {
     bottom: calc(24 / var(--design-w-pc) * 100vw);
+  }
+  .fv__logo:hover {
+    opacity: .7;
+  }
+  .fv__btn:hover {
+    color: #666356;
+    background-color: #ECE2B4;
   }
 }
 /*============================
@@ -529,12 +540,16 @@ li {
   width: calc(730 / var(--design-w-base) * 100%);
   height: 100%;
   margin: 0 auto;
+  transition: .3s;
 }
 
 @media screen and (min-width: 751px) {
   #campaign {
-  padding: calc(40 / var(--design-w-pc) * 100vw) 0;
-}
+    padding: calc(40 / var(--design-w-pc) * 100vw) 0;
+  }
+  .campaign-img:hover {
+    opacity: .7;
+  }
 }
 /*============================
 ヒストリー
@@ -1585,7 +1600,7 @@ li {
   margin-bottom: calc(64 / var(--design-w-base) * 100vw);
 }
 .footer__campaign {
-  margin-bottom: calc(40 / var(--design-w-base) * 100vw);
+  margin-bottom: calc(64 / var(--design-w-base) * 100vw);
 }
 .footer__cta-box {
   display: flex;
@@ -1636,7 +1651,7 @@ li {
     margin-bottom: calc(64 / var(--design-w-pc) * 100vw);
   }
   .footer__campaign {
-    margin-bottom: calc(40 / var(--design-w-pc) * 100vw);
+    margin-bottom: calc(64 / var(--design-w-pc) * 100vw);
   }
   .footer__cta-box {
     gap: calc(40 / var(--design-w-pc) * 100vw);
@@ -1726,6 +1741,7 @@ li {
   gap: calc(24 / var(--design-w-base) * 100vw);
   font-size: calc(36 / var(--design-w-base) * 100vw);
   font-weight: bold;
+  color: var(--color-black);
   line-height: 1.5;
   text-align: left;
   padding-left: calc(60 / 678 * 100%);
@@ -1767,6 +1783,7 @@ li {
   }
   .faq__logo {
     margin: 0 calc(58 / var(--design-w-pc) * 100vw) calc(52 / var(--design-w-pc) * 100vw) auto;
+    transition: .3s;
   }
   .faq__title {
     margin-bottom: calc(48 / var(--design-w-pc) * 100vw);
@@ -1807,5 +1824,8 @@ li {
   }
   .faq__accordion-txtbox.open {
     max-height: calc(400 / var(--design-w-pc) * 100vw);
+  }
+  .faq__logo:hover {
+    opacity: .7;
   }
 }
